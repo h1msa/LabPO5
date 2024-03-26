@@ -1,0 +1,34 @@
+﻿<Window x:Class="Lab05.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab05"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800"
+        Background="Chartreuse"
+        >
+    <StackPanel
+        Orientation="Vertical"
+        Margin="16">
+        <Label Name="Result"
+               FontSize="24">0.0</Label>
+        <Button
+             Click="ButtonBase_OnClick"
+             Margin="0,0,0,16">
+             Oblicz   
+        </Button>
+        <TextBox
+            Name = "Lenght"
+            Margin="0,0,0,16"> 
+        </TextBox>
+        <Label Margin="0,0,0,16">
+            Wybierz jednostkę długości
+        </Label>
+        <ListBox Name="SourceLenghtUnit"></ListBox>
+        <Label Margin="0,0,0,16">
+            Wybierz docelową jednostkę długości
+        </Label>
+        <ListBox Name="TargetLenghtUnit"></ListBox>
+    </StackPanel>
+</Window>
